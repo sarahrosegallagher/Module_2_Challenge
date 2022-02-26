@@ -86,16 +86,18 @@ The main change I made in the process of refactoring the code was moving from ne
    
         
     Next i
-    '''
+    
+
 
 ### Run Times 
-Before Refactor Run Times:
+As seen below, the refactoring decreased the run time for the analysis of both years. The run time dropped from 0.68s to 0.08s and 0.14s, respectively. This represents a decrease of about 80% in run time from before to after refactoring. 
 
+Before Refactor Run Times:
 0.68 for 2017 and 2018
 
 After Refactor Run Times:
-
-(images and descriptions)
+![2017 Run Time](Resources/VBA_Challenge_2017.png.png)
+![2018 Run Time](Resources/VBA_Challenge_2018.png.png)
 
 ## Summary
 
