@@ -13,7 +13,7 @@ This analysis is designed to be friendly to the end-user in the following ways:
 
 ## Results
 ### Stock Performance Across Years
-When looking at the output of the stock performance, we notice a stark difference between the results for 2017 as compared to 2018. While we do see a shift in the total daily volume, the most significant shift is in which stocks have a postive vs a negative yearly return. In the 2017 analysis, we see that all the stocks except one (TERP) have a ***positive return***. Contrasntingly, in the 2018 analysis, all the stocks except two (RUN and ENPH) have a ***negative return***. 
+When looking at the output of the stock performance, we notice a stark difference between the results for 2017 as compared to 2018. While we do see a shift in the total daily volume, the most significant shift is in which stocks have a postive vs a negative yearly return. In the 2017 analysis, we see that all the stocks except one (TERP) have a **positive return**. Contrasntingly, in the 2018 analysis, all the stocks except two (RUN and ENPH) have a **negative return**. 
 
 ### Impact of Refactoring on Execution Times
 ### Code 
@@ -93,7 +93,7 @@ The main change I made in the process of refactoring the code was moving from ne
 
 
 ### Run Times 
-As seen below, the refactoring decreased the run time for the analysis of both years. The run time dropped from 0.68s to 0.08s and 0.14s, respectively. This represents a decrease of about 80% in run time from before to after refactoring. 
+As seen below, the refactoring decreased the run time for the analysis of both years. The run time dropped from 0.68s to 0.08s and 0.14s, respectively. This represents an aproximate **decrease of 80% in run time** from before to after refactoring. 
 
 Before Refactor Run Times:
 
@@ -108,4 +108,9 @@ After Refactor Run Times:
 
 ### 1. What are the advantages and disadvantages of refactoring code?
 
+The advantages of refactoring code as seen in this project consist mainly of simplification and increase efficiency. The code became more simple when shifting from nested for loops to an output array. This also caused a significant increase in efficiency, as shown by the decrease in run time. 
+
+Some disadvantages of refactoring code are the time and challenges that the process can incur. Reworking code takes time on the part of the developer, which may not always be a necessary step if the code is working well for the intended purpose.  Additionally, refactoring can introduce bugs or other points of error in the code that need to be solved before it can run. 
+
 ### 2. How do these pros and cons apply to refactoring the original VBA script?
+Based on the above pros and cons, refactoring the original VBA script was appropriate and necessary. In terms of efficiency, refactoring was necessary so that the end-user can apply the same analysis to a larger dataset. If we did not have that need in mind, refactoring may be unnecessary. In terms of simplicity vs introducing new challenges, the refactoring added simplicity and did not introduce any significant challenges. 
