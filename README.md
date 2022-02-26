@@ -13,12 +13,14 @@ This analysis is designed to be friendly to the end-user in the following ways:
 
 ## Results
 ### Stock Performance Across Years
-
+When looking at the output of the stock performance, we notice a stark difference between the results for 2017 as compared to 2018. While we do see a shift in the total daily volume, the most significant shift is in which stocks have a postive vs a negative yearly return. In the 2017 analysis, we see that all the stocks except one (TERP) have a ***positive return***. Contrasntingly, in the 2018 analysis, all the stocks except two (RUN and ENPH) have a ***negative return***. 
 
 ### Impact of Refactoring on Execution Times
 ### Code 
 The main change I made in the process of refactoring the code was moving from nested for loops to using output arrays in order to handle the multiple outputs needed for the analysis. This allowed the code to be simplified into a single for loop.  Below is an excerpt from the macro, including the output arrays and excluding parts that were not changed in refactoring (i.e. headrer row, formatting).
-'''
+
+
+```
 'Activate data worksheet
     Worksheets(yearValue).Activate
     
@@ -86,16 +88,18 @@ The main change I made in the process of refactoring the code was moving from ne
    
         
     Next i
-    
+    ```
 
 
 ### Run Times 
 As seen below, the refactoring decreased the run time for the analysis of both years. The run time dropped from 0.68s to 0.08s and 0.14s, respectively. This represents a decrease of about 80% in run time from before to after refactoring. 
 
 Before Refactor Run Times:
+
 0.68 for 2017 and 2018
 
 After Refactor Run Times:
+
 ![2017 Run Time](Resources/VBA_Challenge_2017.png.png)
 ![2018 Run Time](Resources/VBA_Challenge_2018.png.png)
 
